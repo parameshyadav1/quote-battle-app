@@ -1,0 +1,117 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.vote-panel {
+  margin-top: 2rem;
+}
+
+.quotes-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.quote-card {
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.quote-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.quote-card p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote-card span {
+  font-style: italic;
+  color: #555;
+}
+
+.vs {
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: center;
+  margin: 0 0.5rem;
+  color: #888;
+}
+
+.referee-button {
+  margin-top: 2rem;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.referee-button:hover {
+  background: linear-gradient(135deg, #9b59b6, #2980b9);
+}
+
+.leaderboard {
+  margin-top: 4rem;
+  text-align: left;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.leaderboard h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.leaderboard ol {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.leaderboard li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quotes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vs {
+    margin: 1rem 0;
+  }
+}
